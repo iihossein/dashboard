@@ -14,17 +14,17 @@
 </head>
 
 <body class="">
-    <header class="header pt-1" id="navbar">
-        <section class="sidebar-header mt-1">
+    <header class="header pt-1 mt-0" id="navbar">
+        <section class="sidebar-header">
             <section class="d-flex justify-content-between flex-md-row-reverse px-2">
-                <span class="d-inline d-md-none"><i class="fas fa-toggle-off "></i></span>
-                <span class="d-none d-md-inline"><i class="fas fa-toggle-on "></i></span>
-                <span><img class="logo" src="assets/images/logo.png" alt=""></span>
-                <span class="d-md-none"><i class="fas fa-ellipsis-h "></i></span>
+                <span class="d-inline d-md-none mt-2"><i class="fas fa-toggle-off "></i></span>
+                <span class="d-none d-md-inline mt-2"><i class="fas fa-toggle-on "></i></span>
+                <span><img class="logo mt-2" src="assets/images/logo.png" alt=""></span>
+                <span class="d-md-none mt-2"><i class="fas fa-ellipsis-h "></i></span>
             </section>
         </section>
         <!-- End sidebar header -->
-
+        
         <section class="body-header">
             <section class="d-flex justify-content-between align-items-center ">
                 <section class="mt-2">
@@ -43,7 +43,7 @@
                 </section>
 
                 <section class="d-flex align-items-center">
-                    <span class="mx-3 mx-md-4 mt-2 position-relative">
+                    <span class="mx-2 mx-md-3 mt-2 position-relative">
                         <span class="position-relative pointer">
                             <i class="far fa-bell "></i><span class="badge bg-green position-absolute top-0 start-100 translate-middle">4</span>
                         </span>
@@ -90,7 +90,7 @@
                         </section>
                     </span>
 
-                    <span class="mx-3 mx-md-4 mt-2 position-relative">
+                    <span class="mx-2 mx-md-3 mt-2 position-relative">
 
                         <span class="position-relative pointer">
                             <i class="far fa-comment-alt "></i><span class="badge bg-green position-absolute top-0 start-100 translate-middle">4</span>
@@ -190,7 +190,7 @@
                         </section>
                     </span>
 
-                    <span class="mx-4  mx-md-5 mt-0 position-relative">
+                    <span class="mx-3  mx-md-4 mt-0 position-relative">
                         <span class="pointer">
                             <img class="header-avatar" src="assets/images/avatar-2.jpg" alt="">
                             <span class="header-username">حسین نظری</span>
@@ -233,27 +233,27 @@
     </header>
     <!-- End nav -->
 
-    <section class="body-container">
-        <!-- <aside>
+    <section class="body-container  d-flex">
+        <aside class="sidebar">
             <section class="sidebar-container">
                 <section class="sidebar-wrapper">
                     <a href="#" class="sidebar-link">
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-home sidebar-icon-shadow"></i>
                         <span>خانه</span>
                     </a>
 
                     <section class="sidebar-part-title">بخش محتوی</section>
 
                     <a href="#" class="sidebar-link">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars sidebar-icon-shadow"></i>
                         <span>دسته ها</span>
                     </a>
 
                     <section class="sidebar-group-link">
-                        <section class="sidebar-dropdown-toggle">
-                            <i class="fas fa-chart-bar"></i>
+                        <section class="sidebar-dropdown-toggle d-flex align-items-center justify-content-start">
+                            <i class="fas fa-chart-bar sidebar-icon-shadow icon"></i>
                             <span>نوشته ها</span>
-                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-left angle"></i>
                         </section>
                         <section class="sidebar-dropdown">
                             <a href="#">مقالات</a>
@@ -265,10 +265,10 @@
                     <section class="sidebar-part-title">بخش کاربران</section>
 
                     <section class="sidebar-group-link">
-                        <section class="sidebar-dropdown-toggle">
-                            <i class="fas fa-users"></i>
+                        <section class="sidebar-dropdown-toggle d-flex align-items-center justify-content-start">
+                            <i class="fas fa-users sidebar-icon-shadow icon"></i>
                             <span>کاربران</span>
-                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-left angle"></i>
                         </section>
                         <section class="sidebar-dropdown">
                             <a href="#">ادمین</a>
@@ -280,10 +280,10 @@
                     <section class="sidebar-part-title">بخش کاربران</section>
 
                     <section class="sidebar-group-link">
-                        <section class="sidebar-dropdown-toggle">
-                            <i class="fas fa-cogs"></i>
+                        <section class="sidebar-dropdown-toggle d-flex align-items-center justify-content-start">
+                            <i class="fas fa-cogs sidebar-icon-shadow icon sidebar-icon-shadow-active"></i>
                             <span>تنظیمات منو</span>
-                            <i class="fas fa-angle-left"></i>
+                            <i class="fas fa-angle-left angle"></i>
                         </section>
                         <section class="sidebar-dropdown">
                             <a href="#">منوی هدر</a>
@@ -293,7 +293,7 @@
 
                 </section>
             </section>
-        </aside> -->
+        </aside>
 
 
 
@@ -319,14 +319,21 @@
 
 
 
-        <section class="main-body"></section>
+        <section class="main-body">
+            <section class="row">
+
+                <section>
+                    <a href=""></a>
+                </section>
+            </section>
+        </section>
     </section>
 
-    <div class="bg-danger" style="height: 20rem;"></div>
+    <!-- <div class="bg-danger" style="height: 20rem;"></div>
     <div class="bg-info" style="height: 20rem;"></div>
     <div class="bg-dark" style="height: 20rem;"></div>
     <div class="bg-primary" style="height: 20rem;"></div>
-    <div class="bg-danger" style="height: 20rem;"></div>
+    <div class="bg-danger" style="height: 20rem;"></div> -->
 
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap-5.3.0/bootstrap.bundle.min.js"></script>
