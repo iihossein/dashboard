@@ -7,3 +7,29 @@
     text-align: right;
     font-family: 'IRANSans';
 }
+.bg-gray{
+    background-color: #404e67;
+    color: #dcdcdc;
+}
+.bg-green{
+    background-color: #82D641;
+}
+.color-green{
+    color: #82D641;
+}
+.pointer{
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+h5{
+    font-size: 1rem;
+}
+p{
+    font-size: 0.8rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
