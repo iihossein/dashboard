@@ -1,5 +1,8 @@
 body {
     background-color: #F5F4F9;
+    background-color: #242529;
+    background-color: #eff2f2;
+
     /* background-color: #F8F9FA; */
     /* background-color: rgb(206, 39, 75); */
     /* background-attachment: fixed; */
@@ -28,18 +31,16 @@ body {
     /* position: fixed; */
     width: 100%;
     transition: 1s;
-    position: sticky;
+    position: fixed;
+
     display: flex;
     top: 0;
-    border: none;
     /* background-color: hsla(0,0%,100%,.8)!important; */
     line-height: 4rem;
     justify-content: space-around;
-    z-index: 11;
+    z-index: 12;
     align-items: stretch;
-    background:#ffffffcc;
-    /* backdrop-filter:  blur(2000px); */
-    background-color: #F5F4F9;
+    background-color: #FFFFFF;
 }
 
 .logo {
@@ -48,10 +49,13 @@ body {
 
 .sidebar-header {
     flex: 0 0 14rem;
+    background-color: #242529;
+    /* background-color: #388ff3; */
+    border: 0px;
 }
 
 .body-header {
-    width: calc(100% - 20rem);
+    width: calc(100% - 14rem);
 }
 
 .search-area {
@@ -141,19 +145,18 @@ body {
 
 
 .body-container {
-    /* margin-top: 3.5rem; */
+    margin-top: 4rem;
     z-index: 999;
 }
 
 .sidebar {
-    flex: 0 0 14rem;
-    /* background-color:#3e4677 ; */
+    flex: 0 0 14rem;    
 }
 
 .sidebar-container {
     height: calc(100vh - 4rem);
     /* position: fixed; */
-    right: 0;
+    margin: 0.5rem 1rem;
     top: 4rem;
     z-index: 1000000;
 }
@@ -170,7 +173,7 @@ body {
 .sidebar-part-title {
     font-size: 1rem;
     padding: 1rem 1rem;
-    color: #4242429a;
+    color: #86d7db;
 }
 
 .sidebar-link {
@@ -182,36 +185,42 @@ body {
     align-items: center;
     outline: none;
     border: none;
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .sidebar-link:hover {
-    color: #82D641;
+    background: #383941;
+    /* margin: 0.3rem 0.5rem; */
+    /* color: #242529; */
+    width: 100%;
+    border-radius: 0.3rem;
+    /* box-shadow: 0 .3125rem .625rem 0 rgba(0, 0, 0, .12) !important; */
 }
 
-.sidebar-icon-shadow {
-    background-color: #FFFFFF;
+.sidebar-icon {
     width: 2rem;
     height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 .3125rem .625rem 0 rgba(0, 0, 0, .12) !important;
-    border-radius: 0.4rem;
-    margin-left: 1rem;
 }
 
 .sidebar-icon-shadow-active {
     background-color: #82D641;
     color: #F8F9FA;
-
+    margin: 0.3rem 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 
 .sidebar-group-link {
     font-size: 0.9rem;
     /* margin-top: 1rem; */
-    padding: 0.4rem 0;
+    /* padding: 0.4rem 1rem; */
+    width: 100%;
+    transition: all 0.5s;
+    /* padding: 0.4rem 1rem; */
 }
 
 /* .sidebar-group-link-active{
@@ -232,12 +241,30 @@ body {
 
 .sidebar-dropdown-toggle {
     cursor: pointer;
-    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    /* margin-top: 1rem; */
+    padding: 0.4rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    outline: none;
+    border: none;
     transition: all 0.5s;
+    width: 100%;
 }
 
 .sidebar-dropdown-toggle:hover {
-    color: #82D641;
+    background: #383941;
+    /* margin: 0.3rem 0.5rem; */
+    color: #ccdedf;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.sidebar-link-active {
+    background: #ccdedf;
+    color: #242529;
+    width: 100%;
+    border-radius: 0.5rem;
 }
 
 .sidebar-dropdown-toggle .icon {
@@ -256,10 +283,11 @@ button {
     outline: none;
     border: none;
     transition: all 0.5s;
+    color: #ccdedf;
 }
 
 .sidebar-dropdown a:hover {
-    color: #82D641;
+    color: #beedce;
 }
 
 .sidebar-dropdown a::before,
@@ -336,7 +364,7 @@ button::before {
 .main-body {
     width: calc(100% - 14rem);
     padding: 1rem;
-    height: calc(100% - 3.5rem);
+    height: calc(100% - 4rem);
 }
 
 .main-body-container {
@@ -376,16 +404,15 @@ button::before {
 
     .sidebar {
         /* display: none; */
-        width: 20rem;
+        width: 22rem;
         z-index: 9;
         height: calc(100vh - 4rem);
         position: fixed;
-        overflow: visible;
         top: 4rem;
         right: 0;
-        background:#f5f4f9c9;
+        /* background:#f5f4f9c9; */
         /* box-shadow: inset 0 0 1px 1px hsla(0, 0%, 100%, .9), 0 20px 27px 0 rgba(0, 0, 0, .05) !important; */
-        backdrop-filter: saturate(200%) blur(30px);
+        /* backdrop-filter: saturate(200%) blur(30px); */
 
     }
     .sidebar-container{
