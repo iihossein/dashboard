@@ -98,9 +98,9 @@ $(document).ready(function () {
 
     });
     function toggleFullScreen() {
-        if ((document.fullscreenElement && document.fullscreenElement !== null) || (!document.mozFullScreenElement && document.webkitIsFullscreenElement)) {
-            if (document.documentElement.requestFullscreen) {
-                document.documentElement.requestFullscreen();
+        if ((document.fullScreenElement && document.fullScreenElement !== null) || (!document.mozFullscreenElement && document.webkitIsFullscreenElement)) {
+            if (document.documentElement.requestFullcreen) {
+                document.documentElement.requestFullcreen();
             }            
             else if (document.documentElement.mozRequestFullscreen) {
                 document.documentElement.mozRequestFullscreen();
